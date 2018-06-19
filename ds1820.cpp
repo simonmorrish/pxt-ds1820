@@ -127,7 +127,7 @@ namespace DS1820 {
         int b2 = readByte();
 
         int16_t temp = (b2 << 8 | b1);
-        return temp * 100 / 16;
+        return 50 /*temp * 100 / 16*/;
     }
  
 }
